@@ -11,7 +11,9 @@
             state: root.getState1()
             id: S1
             text: root.Condition1()
-            background_color: [1,1,1,1]
+            background_color: (1,0,0,0.75) if self.state == 'down' else (0,1,0,0.75)
+			background_normal: ""
+			background_down: "" 
             on_press: root.setState1()
             disabled: True
         Label:
@@ -21,7 +23,9 @@
             state: root.getState2()
             id: S2
             text: root.Condition2()
-            background_color: [1,1,1,1]
+            background_color: (1,0,0,0.75) if self.state == 'down' else (0,1,0,0.75)
+			background_normal: ""
+			background_down: "" 
             on_press: root.setState2()
             disabled: True
         Label:
@@ -31,8 +35,10 @@
             state: root.getState3()
             id: S3
             text: root.Condition3()
-            background_color: [1,1,1,1]
-            on_press: root.setState3()
+            background_color: (1,0,0,0.75) if self.state == 'down' else (0,1,0,0.75)
+			background_normal: ""
+			background_down: "" 
+			on_press: root.setState3()
             disabled: True
         Label:
             id: L4
@@ -41,7 +47,9 @@
             state: root.getState4()
             id: S4
             text: root.Condition4()
-            background_color: [1,1,1,1]
+			background_color: (1,0,0,0.75) if self.state == 'down' else (0,1,0,0.75)
+			background_normal: ""
+			background_down: "" #optional if you want your color pressed 
             on_press: root.setState4()
             disabled: True
         Button:
